@@ -1,17 +1,14 @@
 
 from smartphone import Smartphone
 
+catalog = []
 
-catalog = ['phone1', 'phone2','phone3','phone4', 'phone5']
+catalog.append(Smartphone("Xiaomy", "11PRO", "+791038556832"))
+catalog.append(Smartphone("Samsung", "Galaxy S20FE", "+79111111111"))
+catalog.append(Smartphone("Nokia", "3110", "+79000000000"))
+catalog.append(Smartphone("OPPO", "A60", "+79222222222"))
+catalog.append(Smartphone("Xiaomy", "Redmi", "+79333333333"))
 
-phone1 = Smartphone('Nokia', '3110', '8910111224')
-phone2 = Smartphone('Samsung', 'S20FE','89000000000')
-phone3 = Smartphone('Xiaomi', 'redmy', '89111111111')
-phone4 = Smartphone('Xiaomi', '11PRO', '89219992200')
-phone5 = Smartphone('OPRO','Reno13','89334445566')
+for phone in catalog:
+    print(f"{phone.phone_maker} - {phone.model}. {phone.phone_number}")
 
-phone1.ph1() 
-phone2.ph2()
-phone3.ph3()
-phone4.ph4()
-phone5.ph5()

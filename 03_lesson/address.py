@@ -1,16 +1,17 @@
-class Address:
-    index = int
-    city = str
-    street = str
-    home_number = int
-    apart_number = int
 
-    def __init__(self, index, city, street, home_number, apart_number):
-        self.i = index
-        self.c = city
-        self.s = street
-        self.h = home_number
-        self.an = apart_number
+class Address:
+ 
+
+ def __init__(self, index, city, street, house, flat): 
+    self.index = index
+    self.city = city 
+    self.street = street 
+    self.house = house
+    self.flat = flat 
+ 
+    
+
+ def __str__(self): return f"{self.index} {self.city}, {self.street}, {self.house} {self.flat}"
 
 
 
